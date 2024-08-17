@@ -1,10 +1,5 @@
 #include "mousecontroller.h"
 
-BOOLEAN WINAPI mouseController::UnInit() {
-	ZeroMemory(NtUserSendInput_Bytes, 30);
-
-	return TRUE;
-}
 
 BOOLEAN WINAPI mouseController::NtUserSendInput(UINT cInputs, LPINPUT pInputs, int cbSize) {
 	LPVOID NtUserSendInput_Spoof = VirtualAlloc(0, 0x1000, MEM_COMMIT, PAGE_EXECUTE_READWRITE);

@@ -21,7 +21,6 @@ public:
 		memcpy(NtUserSendInput_Bytes, NtUserSendInput_address, 30);
 	}
 
-	BOOLEAN WINAPI UnInit();
 
 	BOOLEAN WINAPI NtUserSendInput(UINT cInputs, LPINPUT pInputs, int cbSize);
 
@@ -29,7 +28,4 @@ public:
 
 	BOOLEAN WINAPI moveAbs(int x, int y);
 	BOOLEAN WINAPI moveRel(int x, int y);
-
-	//UINT WINAPI GetAsyncKeyState(UINT Key);
-
 };

@@ -1,0 +1,1 @@
+spooofs NtUserSendInput for stealthier programmatic mouse input simulation
